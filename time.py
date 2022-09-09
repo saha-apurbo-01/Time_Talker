@@ -14,6 +14,7 @@ google.runAndWait()
 try:
    with sr.Microphone() as source:
        print("listening...")
+       print("must be said : Play")
        voice = listener.listen(source)
        command = listener.recognize_google(voice)
        print(command)
